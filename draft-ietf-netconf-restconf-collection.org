@@ -9,7 +9,7 @@ the retrieval of data nodes with the GET method.
 There is a need for standard mechanisms to control the
 filtering, sorting, and retrieval of data from RESTCONF devices.
 A server may contain many instances of a particular YANG list.
-Retrieval of the entire list at once can be extremely inefficiant.
+Retrieval of the entire list at once can be extremely inefficient.
 
 Pagination mechanisms are needed to allow a client to iterate
 through a large list, in a manner that is most efficient
