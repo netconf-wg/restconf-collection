@@ -289,7 +289,7 @@ specifications of each URI scheme.
   </reference>
   -->
 
-
+<!--
 <reference anchor='RFC6991'>
 
 <front>
@@ -303,6 +303,7 @@ specifications of each URI scheme.
 <seriesInfo name='RFC' value='6991' />
 <format type='TXT' octets='60242' target='http://www.rfc-editor.org/rfc/rfc6991.txt' />
 </reference>
+  -->
 
 <!--
 <reference anchor='W3C.REC-xml-20081126'
@@ -369,15 +370,15 @@ specifications of each URI scheme.
     <organization />
 </author>
 
-<date month='October' day='25' year='2014' />
+<date month='January' year='2015' />
 
 <abstract><t>This document describes an HTTP-based protocol that provides a programmatic interface for accessing data defined in YANG, using the datastores defined in NETCONF.</t></abstract>
 
 </front>
 
-<seriesInfo name='Internet-Draft' value='draft-ietf-netconf-restconf-03' />
+<seriesInfo name='Internet-Draft' value='draft-ietf-netconf-restconf-04' />
 <format type='TXT'
-        target='http://www.ietf.org/internet-drafts/draft-ietf-netconf-restconf-03.txt' />
+        target='http://www.ietf.org/internet-drafts/draft-ietf-netconf-restconf-04.txt' />
 </reference>
 
 

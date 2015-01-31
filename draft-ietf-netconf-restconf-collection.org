@@ -171,8 +171,8 @@ A collection resource can be retrieved with the GET method, optionally
 with the query parameters "limit" (^limit^) and "offset" (^offset^).
 
 The "ietf-restconf-collection" YANG module contains the
-"collection" grouping which specifies the syntax of a
-collection resource.
+"application/yang.collection" restconf-media-type extension
+which specifies the syntax and semantics of a "collection" media type.
 
 ** Query Parameters @query-parameters@
 
@@ -253,13 +253,14 @@ The "ietf-restconf-collection" module defines conceptual definitions
 within groupings, which are not meant to be implemented
 as datastore contents by a server.
 
-The "ietf-yang-types" module from ^RFC6991^
-is used by this module for some type definitions.
+The "ietf-restconf" module from ^I-D.ietf-netconf-restconf^
+is used by this module for the 'restconf-media-type'
+extension definition.
 
 RFC Ed.: update the date below with the date of RFC publication and
 remove this note.
 
-!! include-figure ietf-restconf-collection.yang extract-to="ietf-restconf-collection@2015-01-11.yang"
+!! include-figure ietf-restconf-collection.yang extract-to="ietf-restconf-collection@2015-01-30.yang"
 
 * IANA Considerations @iana@
 
@@ -309,9 +310,8 @@ sub-types for this media type.
 
 ** NETCONF Capability URNs
 
-This document registers several capability identifiers in
-"Network Configuration Protocol (NETCONF) Capability URNs"
-registry
+This document registers two capability identifiers in
+"RESTCONF Protocol Capability URNs" registry
 
 
   Index

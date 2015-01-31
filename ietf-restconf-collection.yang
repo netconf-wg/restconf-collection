@@ -2,6 +2,11 @@ module ietf-restconf-collection {
   namespace "urn:ietf:params:xml:ns:yang:ietf-restconf-collection";
   prefix "rcoll";
 
+  import ietf-restconf {
+    prefix rc;
+    revision-date 2015-01-30;
+  }
+
   organization
     "IETF NETCONF (Network Configuration) Working Group";
 
@@ -9,11 +14,11 @@ module ietf-restconf-collection {
     "WG Web:   <http://tools.ietf.org/wg/netconf/>
      WG List:  <mailto:netconf@ietf.org>
 
-     WG Chair: Bert Wijnen
-               <mailto:bertietf@bwijnen.net>
-
      WG Chair: Mehmet Ersue
                <mailto:mehmet.ersue@nsn.com>
+
+     WG Chair: Mahesh Jethanandani
+               <mailto:mjethanandani@gmail.com>
 
      Editor:   Andy Bierman
                <mailto:andy@yumaworks.com>
@@ -55,11 +60,15 @@ module ietf-restconf-collection {
 
   // RFC Ed.: update the date below with the date of RFC publication
   // and remove this note.
-  revision 2015-01-11 {
+  revision 2015-01-30 {
     description
       "Initial revision.";
     reference
       "RFC XXXX: RESTCONF Collection Resource.";
+  }
+
+  rc:restconf-media-type "application/yang.collection" {
+    uses collection;
   }
 
   grouping collection {
